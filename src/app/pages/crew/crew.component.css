@@ -1,0 +1,280 @@
+.crew-body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Dark-Blue);
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+  background: url(../../../assets/crew/background-crew-desktop.jpg) no-repeat center center fixed;
+  background-size: cover;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 87%;
+  margin-top: 150px;
+}
+
+.crew-pick-text {
+  position: relative;
+  top: 50px;
+}
+
+.crew-pick-text p {
+  text-transform: uppercase;
+  font-family: var(--Barlow-Condensed);
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  color: var(--White);
+}
+
+.crew-pick-text span {
+  color: rgb(97, 97, 97);
+  font-weight: 900;
+}
+
+section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 1107px;
+
+}
+
+.crew-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+
+.crew-role {
+  margin-bottom: 15px;
+}
+
+.crew-role p {
+  font-family: var(--Bellefair);
+  font-size: 32px;
+  color: var(--White);
+  opacity: .3;
+  text-transform: uppercase;
+}
+
+.crew-name {
+  margin-bottom: 27px;
+}
+
+.crew-name h1 {
+  font-family: var(--Bellefair);
+  font-size: 56px;
+  color: var(--White);
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.crew-bio {
+  width: 444px;
+  margin-bottom: 120px;
+}
+
+.crew-bio p {
+  font-family: var(--Barlow-Regular);
+  font-size: 18px;
+  color: var(--Light-Purple);
+  line-height: 32px;
+}
+
+.crew-menu ul {
+  display: flex;
+  gap: 25px;
+}
+
+.crew-menu ul li {
+  list-style: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background-color: var(--White);
+  opacity: .2;
+  border-radius: 50%;
+}
+
+.crew-menu ul li:hover {
+  opacity: .6;
+}
+
+.crew-menu ul li.active {
+  opacity: 1;
+}
+
+.crew-image img {
+  position: relative;
+  bottom: -3px;
+}
+
+  @media screen and (max-width: 1202px) {
+  .crew-body {
+    background: url(../../../assets/crew/background-crew-tablet.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .wrapper {
+    height: 80%;
+  }
+
+  .crew-pick-text {
+    top: 0;
+    left: 37px;
+    margin-bottom: 60px;
+  }
+
+  .crew-pick-text p {
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+
+  section {
+    width: 98vw;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .crew-menu ul {
+    gap: 16px;
+  }
+
+  .crew-menu ul li {
+    width: 10px;
+    height: 10px;
+  }
+
+  .crew-left {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .crew-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .crew-role {
+    margin-bottom: 8px;
+  }
+
+  .crew-role p {
+    font-size: 24px;
+  }
+
+  .crew-name {
+    margin-bottom: 16px;
+  }
+
+  .crew-name h1 {
+    font-size: 40px;
+  }
+
+  .crew-bio {
+    width: 91%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .crew-bio p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .crew-image img {
+    height: 532px;
+    bottom: -4px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .crew-body {
+      background: url(../../../assets/crew/background-crew-mobile.jpg) no-repeat center center fixed;
+      background-size: cover;
+  }
+
+  .wrapper {
+    justify-content: flex-start;
+    width: 94vw;
+    height: 88%;
+    margin-top: 0;
+  }
+
+  .crew-pick-text {
+    margin-bottom: 32px;
+    text-align: center;
+    left: 0;
+  }
+
+  .crew-pick-text p {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+
+  section {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .crew-left {
+    width: 100%;
+    margin-bottom: 0;
+    flex-direction: column-reverse;
+  }
+
+  .crew-description {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .crew-role {
+    margin: 0 0 8px 0;
+    text-align: center;
+  }
+
+  .crew-role p {
+    font-size: 16px;
+  }
+
+  .crew-name h1 {
+    font-size: 24px;
+  }
+
+  .crew-bio {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .crew-bio p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .crew-menu {
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  .crew-right {
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .crew-image img {
+    height: 222px;
+  }
+}

@@ -1,0 +1,34 @@
+<div class="crew-body">
+  <div class="wrapper">
+    <div class="crew-pick-text">
+      <p><span>02</span> meet your crew</p>
+    </div>
+    <section>
+      <div class="crew-left">
+        <div class="crew-description">
+          <div *ngIf="selectedCrewMember" class="crew-role">
+            <p>{{ selectedCrewMember.role }}</p>
+          </div>
+          <div *ngIf="selectedCrewMember" class="crew-name">
+            <h1>{{ selectedCrewMember.name }}</h1>
+          </div>
+          <div *ngIf="selectedCrewMember" class="crew-bio">
+            <p>{{ selectedCrewMember.bio }}</p>
+          </div>
+        </div>
+        <div class="crew-menu">
+          <ul>
+            <li *ngFor="let crew of crews" [routerLink]="'/crew/'+crew.id" routerLinkActive="active"
+              (click)="showCrewMember(crew)">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="crew-right">
+        <div *ngIf="selectedCrewMember" class="crew-image">
+          <img [src]="selectedCrewMember.image" [alt]="selectedCrewMember.name">
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "Barlow Condensed";
+  font-weight: 400;
+  src: url(assets/fonts/BarlowCondensed-Regular.woff) format('woff'),
+    url(assets/fonts/BarlowCondensed-Regular.woff2) format('woff2'),
+}
+
+@font-face {
+  font-family: 'Bellefair';
+  font-weight: 400;
+  src: url(assets/fonts/Bellefair-Regular.woff) format('woff'),
+    url(assets/fonts/Bellefair-Regular.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: 'Barlow Regular';
+  font-weight: 400;
+  src: url(assets/fonts/Barlow-Regular.woff) format('woff'),
+    url(assets/fonts/Barlow-Regular.woff2) format('woff2')
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Dark-Blue: #0B0D17;
+  --Light-Purple: #D0D6F9;
+  --White: #FFFFFF;
+
+  --Bellefair: 'Bellefair';
+  --Barlow-Condensed: 'Barlow Condensed';
+  --Barlow-Regular: 'Barlow Regular';
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--Dark-blue);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  color: var(--White);
+  opacity: 0.5;
+}
+
+
+

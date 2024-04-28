@@ -1,0 +1,37 @@
+<div class="technology-body">
+  <div class="wrapper">
+    <div class="pick-technology-text">
+      <p><span>03 </span>Space launch 101</p>
+    </div>
+    <section>
+      <div class="technology-left">
+        <div class="technology-menu">
+          <ul>
+            <li *ngFor="let technology of technology" [routerLink]="'/technology/' + technology.id"
+              routerLinkActive="active" (click)="showTechnology(technology)">{{
+              technology.id }}</li>
+          </ul>
+        </div>
+        <div class="technology-main">
+          <div class="the-technology-text">
+            <p>The technology...</p>
+          </div>
+          <div *ngIf="selectedTechnology" class="technology-name">
+            <h1>{{ selectedTechnology.name }}</h1>
+          </div>
+          <div *ngIf="selectedTechnology" class="technology-description">
+            <p>{{ selectedTechnology.description }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="technology-right">
+        <div *ngIf="selectedTechnology" class="technology-image portrait">
+          <img [src]="selectedTechnology.images.portrait" [alt]="selectedTechnology.name">
+        </div>
+        <div *ngIf="selectedTechnology" class="technology-image landscape">
+          <img [src]="selectedTechnology.images.landscape" [alt]="selectedTechnology.name">
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

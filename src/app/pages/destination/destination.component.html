@@ -1,0 +1,39 @@
+<div class="destination-body">
+  <div class="wrapper">
+    <p class="des-pick-text"><span>01</span> Pick your destination</p>
+    <section>
+      <div class="des-left">
+        <div *ngIf="selectedDestination" class="des-image">
+          <img [src]="selectedDestination.image" [alt]="selectedDestination.name">
+        </div>
+      </div>
+      <div class="des-right">
+        <div class="des-menu">
+          <ul>
+            <li *ngFor="let destination of destinations" [routerLink]="'/destination/' + destination.name"
+              routerLinkActive="active" (click)="showDestination(destination)">
+              {{ destination.name }}
+            </li>
+          </ul>
+        </div>
+        <div class="des-content">
+          <div *ngIf="selectedDestination" class="des-title">
+            <h1>{{ selectedDestination.name }}</h1>
+          </div>
+          <div *ngIf="selectedDestination" class="des-description">
+            <p>{{ selectedDestination.description }}</p>
+          </div>
+          <hr>
+          <div class="des-distance-travel-container">
+            <div *ngIf="selectedDestination" class="des-distance">
+              <p><span>AVG. DISTANCE </span> {{ selectedDestination.distance }}</p>
+            </div>
+            <div *ngIf="selectedDestination" class="des-travel">
+              <p><span>EST. TRAVEL TIME </span> {{ selectedDestination.travel}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
