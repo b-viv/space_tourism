@@ -54,7 +54,8 @@ For example:
 - Directives
 
 What I learned is the child route, which is not complicated. It is like another route but the one difference is you place child routes in a children array within the parent route.
-And my first project based on Figma design.
+
+My first project based on Figma design.
 
 ### Continued development
 
