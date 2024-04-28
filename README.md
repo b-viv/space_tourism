@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Link](https://b-viv.github.io/space_tourism/home)
 
 ## My process
 
@@ -46,14 +46,14 @@ Users should be able to:
 ### What I learned
 
 This is a multi-part website project and it is great for learning the basics of Angular framework.
-For example:
 
+For example:
 - Interpolation binding,
 - Property binding,
 - Event binding
-- using Directives
+- Directives
 
-What I learned is the child route, which is not complicated. The one difference is you place child routes in a children array within the parent route.
+What I learned is the child route, which is not complicated. It is like another route but the one difference is you place child routes in a children array within the parent route.
 And my first project based on Figma design.
 
 ### Continued development
