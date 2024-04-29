@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Link](https://www.frontendmentor.io/solutions/spacetourism-rljfVdLUgM)
 - Live Site URL: [Link](https://b-viv.github.io/space_tourism/home)
 
 ## My process
