@@ -1,9 +1,6 @@
 .destination-body {
   width: 100%;
   height: 100%;
-  background-color: var(--Dark-Blue);
-  display: grid;
-  justify-content: center;
   align-items: stretch;
   background: url(../../../assets/destination/background-destination-desktop.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -13,9 +10,9 @@
 
 .wrapper {
   max-width: 1120px;
+  margin: 80px auto;
   display: flex;
   flex-direction: column;
-  margin-top: 212px;
   gap: 98px;
 }
 
@@ -33,11 +30,12 @@
 }
 
 section {
-  width: 105%;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 11vw;
+  margin: 0 auto;
 }
 
 .des-right {
@@ -60,18 +58,22 @@ section {
 .des-menu ul li {
   list-style: none;
   font-family: var(--Barlow-Condensed);
-  color: var(--Light-Purple);
   font-size: 16px;
-  letter-spacing: 2.7px;
   text-transform: uppercase;
-  cursor: pointer;
+  letter-spacing: 2.7px;
+  color: var(--White);
+}
+
+.des-menu ul li a {
+  color: var(--White);
+  text-decoration: none;
   position: relative;
 }
 
-.des-menu ul li:after {
+.des-menu ul li a::after {
   content: "";
   position: absolute;
-  top: 32px;
+  top: 30px;
   left: 0;
   width: 0;
   height: 3px;
@@ -80,13 +82,12 @@ section {
   transition: all 0.5s;
 }
 
-.des-menu ul li:hover::after {
+.des-menu ul li a:hover::after {
   width: 100%;
 }
 
-.des-menu ul li.active::after {
+.des-menu ul li a.active::after {
   width: 100%;
-  color: var(--White);
   background-color: var(--White);
   opacity: 1;
 }
@@ -169,7 +170,6 @@ section {
   }
 
   .wrapper {
-    margin-top: 145px;
     justify-content: flex-start;
     gap: 60px;
   }
@@ -234,7 +234,6 @@ section {
   }
 
   .wrapper {
-    margin-top: 90px;
     align-items: center;
     gap: 32px;
   }

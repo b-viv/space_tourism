@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-destination',
@@ -40,12 +40,23 @@ export class DestinationComponent {
 
   selectedDestination: Destinations | null = null;
 
+  constructor(private route: ActivatedRoute, private router: Router) {}
+
   ngOnInit(): void {
-    this.selectedDestination = this.destinations[0];
+    this.route.paramMap.subscribe(params => {
+      const destinationName = params.get('name');
+      if (destinationName) {
+        this.selectedDestination = this.destinations.find(destination => destination.name === destinationName) || this.destinations[0];
+      } else {
+        this.router.navigate(['/destination', this.destinations[0].name]);
+        this.selectedDestination = this.destinations[0];
+      }
+    });
   }
 
   showDestination(destination: Destinations): void {
     this.selectedDestination = destination;
+    this.router.navigate(['/destination', destination.name]);
   }
 }
 

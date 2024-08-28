@@ -1,4 +1,5 @@
 <div class="destination-body">
+  <app-header></app-header>
   <div class="wrapper">
     <p class="des-pick-text"><span>01</span> Pick your destination</p>
     <section>
@@ -10,9 +11,15 @@
       <div class="des-right">
         <div class="des-menu">
           <ul>
-            <li *ngFor="let destination of destinations" [routerLink]="'/destination/' + destination.name"
-              routerLinkActive="active" (click)="showDestination(destination)">
-              {{ destination.name }}
+            <li><a routerLink="/destination/Moon" routerLinkActive="active"
+                (click)="showDestination(destinations[0])">Moon</a></li>
+            <li><a routerLink="/destination/Mars" routerLinkActive="active"
+                (click)="showDestination(destinations[1])">Mars</a></li>
+            <li><a routerLink="/destination/Europa" routerLinkActive="active"
+                (click)="showDestination(destinations[2])">Europa</a>
+            </li>
+            <li><a routerLink="/destination/Titan" routerLinkActive="active"
+                (click)="showDestination(destinations[3])">Titan</a>
             </li>
           </ul>
         </div>

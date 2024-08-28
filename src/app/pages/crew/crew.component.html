@@ -1,4 +1,5 @@
 <div class="crew-body">
+  <app-header></app-header>
   <div class="wrapper">
     <div class="crew-pick-text">
       <p><span>02</span> meet your crew</p>
@@ -18,9 +19,10 @@
         </div>
         <div class="crew-menu">
           <ul>
-            <li *ngFor="let crew of crews" [routerLink]="'/crew/'+crew.id" routerLinkActive="active"
-              (click)="showCrewMember(crew)">
-            </li>
+            <li><a routerLink="/crew/1" routerLinkActive="active"></a></li>
+            <li><a routerLink="/crew/2" routerLinkActive="active"></a></li>
+            <li><a routerLink="/crew/3" routerLinkActive="active"></a></li>
+            <li><a routerLink="/crew/4" routerLinkActive="active"></a></li>
           </ul>
         </div>
       </div>

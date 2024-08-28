@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-technology',
@@ -37,14 +38,27 @@ export class TechnologyComponent {
     }
   ];
 
-  ngOnInit() {
-    this.selectedTechnology = this.technology[0];
-  };
+  selectedTechnology : Technologies | null = null;
 
-  selectedTechnology : Technologies | null;
+  constructor(private route: ActivatedRoute, private router: Router) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      const techId = params.get('id');
+      if (techId) {
+        const id = parseInt(techId, 10);
+        this.selectedTechnology = this.technology.find(tech => tech.id === id) || this.technology[0];
+      } else {
+        this.router.navigate(['/technology', this.technology[0].id]);
+        this.selectedTechnology = this.technology[0];
+      }
+    });
+  }
+
 
   showTechnology (technology : Technologies) :void {
     this.selectedTechnology = technology;
+    this.router.navigate(['/technology', technology.id]);
   }
 }
 

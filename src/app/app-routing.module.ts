@@ -9,26 +9,15 @@ import { TechnologyComponent } from './pages/technology/technology.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'header', component: HeaderComponent },
-  { path: 'destination', component: DestinationComponent,
-    children: [
-      { path: '', redirectTo: 'Moon', pathMatch: 'full' },
-      { path: ':name', component: DestinationComponent }
-    ]
-  },
-  { path: 'crew', component: CrewComponent,
-    children: [
-      { path: '', redirectTo: '1', pathMatch: 'full' },
-      { path: ':id', component: CrewComponent }
-    ]
-  },
-  { path: 'technology', component: TechnologyComponent,
-    children: [
-      { path: '', redirectTo: '1', pathMatch: 'full' },
-      { path: ':id', component: TechnologyComponent }
-    ]
-  },
+  { path: 'destination', component: DestinationComponent },
+  { path: 'destination/:name', component: DestinationComponent },
+  { path: 'crew/:id', component: CrewComponent },
+  { path: 'crew', component: CrewComponent },
+  { path: 'technology/:id', component: TechnologyComponent },
+  { path: 'technology', component: TechnologyComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

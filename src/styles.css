@@ -40,11 +40,12 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: var(--Dark-blue);
+  background-color: var(--Dark-Blue);
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
   color: var(--White);
   opacity: 0.5;
 }

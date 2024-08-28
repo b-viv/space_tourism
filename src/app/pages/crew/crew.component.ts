@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-crew',
@@ -39,12 +40,24 @@ export class CrewComponent {
 
   selectedCrewMember: Crew | null = null;
 
-  ngOnInit() {
-    this.selectedCrewMember = this.crews[0];
+   constructor(private route: ActivatedRoute, private router: Router) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      const crewId = params.get('id');
+      if (crewId) {
+        const id = parseInt(crewId, 10);
+        this.selectedCrewMember = this.crews.find(crew => crew.id === id) || this.crews[0];
+      } else {
+        this.router.navigate(['/crew', this.crews[0].id]);
+        this.selectedCrewMember = this.crews[0];
+      }
+    });
   }
 
   showCrewMember(crew: Crew): void {
     this.selectedCrewMember = crew;
+    this.router.navigate(['/crew', crew.id]);
   }
 }
 
