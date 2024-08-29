@@ -110,6 +110,10 @@ section {
   opacity: 1;
 }
 
+.crew-right {
+  height: 575px;
+}
+
 .crew-image img {
   position: relative;
   bottom: -3px;
@@ -274,6 +278,7 @@ section {
 
   .crew-right {
     width: 90%;
+    height: fit-content;
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
