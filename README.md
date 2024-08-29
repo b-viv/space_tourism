@@ -53,15 +53,7 @@ For example:
 - Event binding
 - Directives
 
-What I learned is the child route, which is not complicated. It is like another route but the one difference is you place child routes in a children array within the parent route.
-
 My first project based on Figma design.
-
-### Continued development
-
-This project is a bit messy. In the future, I will focus more on thorough planning before starting to build the web applications.
-
-I would like to further develop this project as my knowledge in this area grows.
 
 ## Author
 
