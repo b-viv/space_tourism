@@ -1,60 +1,43 @@
-# Frontend Mentor - Space tourism website solution
-
-This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
-
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for each of the website's pages depending on their device's screen size
-- See hover states for all interactive elements on the page
-- View each page and be able to toggle between the tabs to see new information
-
-### Screenshot
+# Space tourism 🚀
 
 ![](screenshot.png)
+![](screenshot2.png)
+![](screenshot1.png)
+![](screenshot3.png)
 
-### Links
+## 📚 Table of contents
 
-- Solution URL: [Link](https://www.frontendmentor.io/solutions/spacetourism-rljfVdLUgM)
-- Live Site URL: [Link](https://b-viv.github.io/space_tourism/home)
+- [Overview](#overview)
+- [Features](#features)
+- [Built with](#built-with)
 
-## My process
+## Overwiev
 
-### Built with
+This is a fully responsive, multi-page website where users can explore various aspects of space travel. From planets and spacecraft to crew members, the site offers an immersive experience built around a sleek and modern design.
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Angular 17+
+## Features
 
-### What I learned
+🌍 Multi-Page Layout: Users can navigate between Home, Destination, Crew, and Technology pages, each with its own unique content and design.
 
-This is a multi-part website project and it is great for learning the basics of Angular framework.
+🪐 Interactive Destination Selector: Visitors can view details about different planets, including distance and estimated travel time.
 
-For example:
-- Interpolation binding,
-- Property binding,
-- Event binding
-- Directives
+👨‍🚀 Animated Crew Section: Switching between crew members reveals smooth transitions and engaging astronaut bios.
 
-My first project based on Figma design.
+🛰️ Technology Carousel: A responsive slider displays various space technologies, with imagery that adapts based on screen size.
 
-## Author
+📱 Fully Responsive Design: The layout and components adapt seamlessly to mobile, tablet, and desktop devices for a consistent user experience.
 
-- Frontend Mentor - [@Viv](https://www.frontendmentor.io/profile/b-viv)
+🎨 Styled from Figma Design: Built to match a professional UI design from Frontend Mentor, ensuring visual consistency and usability.
+
+
+## Built with
+
+- HTML5
+- CSS 
+- Angular 
+
+
+
+---
+> This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
