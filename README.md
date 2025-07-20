@@ -1,13 +1,10 @@
 # Space tourism 🚀
 
 ![](screenshot.png)
----
 ![](screenshot2.png)
----
-![](screenshot1.png)
----
+
+![](screenshot1.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![](screenshot3.png)
----
 
 ## 📚 Table of contents
 
